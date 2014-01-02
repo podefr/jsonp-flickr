@@ -6,7 +6,7 @@
 "use strict";
 
 var DEFAULT_URL = "http://ycpi.api.flickr.com/services/rest/";
-var DEFAULT_CALLBACKNAME = "jsonpcallback";
+var DEFAULT_CALLBACKNAME = "jsoncallback";
 
 var Jsonp = require("jsonp-utils");
 

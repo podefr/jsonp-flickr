@@ -4,3 +4,9 @@
  * MIT Licensed
  */
 "use strict";
+
+var Jsonp = require("jsonp-utils");
+
+module.exports = function Flickr() {
+
+};

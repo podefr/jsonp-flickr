@@ -8,6 +8,14 @@ var chai = require("chai"),
 	expect = chai.expect,
 	proxyquire = require("proxyquire").noCallThru();
 
+var jsonpMock = {
+
+};
+
+var Flickr = proxyquire("../js/jsonp-flickr", {
+	"jsonp-utils": jsonpMock
+});
+
 describe("GIVEN default Flickr", function() {
 
 });

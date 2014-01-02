@@ -15,5 +15,11 @@ var Flickr = proxyquire("../js/jsonp-flickr", {
 });
 
 describe("GIVEN default Flickr", function() {
-
+	describe("WHEN required in", function () {
+		it("THEN returns a configured new jsonp-utils", function () {
+			expect(jsonpMock.called).to.be.true;
+			expect(jsonpMock.args[0][0].url).to.equal("http://ycpi.api.flickr.com/services/rest/");
+			expect(jsonpMock.args[0][0].callbackName).to.equal("jsonpcallback");
+		});
+	});
 });

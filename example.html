@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>jsonp-flickr</title>
+		<script src="jsonp-flickr-browser.js"></script>
+	</head>
+	<body>
+
+		<div class="example1"></div>
+		<div class="example2"></div>
+
+		<script type="text/javascript">
+			var flickr = require("jsonp-flickr");
+
+			var request = {
+				method: "flickr.test.echo",
+				format: "json",
+				api_key: "a1faa53df9402fc5cc2d9746118f9ddc"
+			};
+
+			// Using the callback API
+			flickr.get(request, /* callback */ function (err, data) {
+				this.innerHTML = JSON.stringify(data);
+			}, /* scope */ document.querySelector(".example1"));
+
+			// Using the promise API (vow promise)
+			var promise = flickr.get(request);
+
+			promise.then(function onSuccess(data) {
+				document.querySelector(".example2").innerHTML = JSON.stringify(data);
+			}, function onError(err) {
+				// on error
+			});
+		</script>
+	</body>
+</html>

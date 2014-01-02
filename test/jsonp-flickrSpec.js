@@ -8,9 +8,7 @@ var chai = require("chai"),
 	expect = chai.expect,
 	proxyquire = require("proxyquire").noCallThru();
 
-var jsonpMock = {
-
-};
+var jsonpMock = sinon.spy();
 
 var Flickr = proxyquire("../js/jsonp-flickr", {
 	"jsonp-utils": jsonpMock

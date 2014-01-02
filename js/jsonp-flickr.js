@@ -5,8 +5,12 @@
  */
 "use strict";
 
+var DEFAULT_URL = "http://ycpi.api.flickr.com/services/rest/";
+var DEFAULT_CALLBACKNAME = "jsonpcallback";
+
 var Jsonp = require("jsonp-utils");
 
-module.exports = function Flickr() {
-
-};
+module.exports = new Jsonp({
+	url: DEFAULT_URL,
+	callbackName: DEFAULT_CALLBACKNAME
+});

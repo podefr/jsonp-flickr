@@ -1,7 +1,7 @@
 {
  "name": "jsonp-flickr",
  "description": "Access Flickr's API via Jsonp from your browser",
- "version": "0.0.1",
+ "version": "0.1.0",
  "homepage": "https://github.com/podefr/jsonp-flickr",
  "licenses": [{
   "type":"MIT",

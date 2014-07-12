@@ -9,9 +9,7 @@
  }],
  "files": [
  	"LICENSE",
- 	"jsonp-flickr.min.js",
- 	"jsonp-flickr-browser.js",
- 	"jsonp-flickr-browser.min.js"
+ 	"index.js"
  ],
  "dependencies": {
  	"jsonp-utils": ">=0.0.3"
@@ -30,7 +28,7 @@
  "bugs": {
   "url": "https://github.com/podefr/jsonp-flickr/issues"
  },
- "main":"jsonp-flickr.min.js",
+ "main":"index.js",
  "scripts": {
  	"test": "mocha"
  }

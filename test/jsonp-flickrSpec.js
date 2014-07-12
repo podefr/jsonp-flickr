@@ -10,7 +10,7 @@ var chai = require("chai"),
 
 var jsonpMock = sinon.spy();
 
-var Flickr = proxyquire("../js/jsonp-flickr", {
+var Flickr = proxyquire("../index", {
 	"jsonp-utils": jsonpMock
 });
 

@@ -10,12 +10,7 @@ Installation:
 npm install jsonp-flickr
 ```
 
-In the browser:
-===============
-
-```html
-<script src="jsonp-flickr-browser.js"></script>
-```
+You can use something like browserify to package for the browser.
 
 Usage:
 ======
